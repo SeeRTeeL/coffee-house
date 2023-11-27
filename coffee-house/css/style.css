@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	background: #E1D4C9;
+	color: #403F3D;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: #403F3D;
+	position: relative;
+}
+
+a:not(.promo__button, .download__btn)::before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	border: 1px solid #403F3D;
+	transition: all 0.4s ease-in;
+	opacity: 0;
+}
+
+a:hover::before {
+	width: 100%;
+	opacity: 1;
+}
+
+.container {
+	max-width: 1440px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.header__logo {}
+
+.header__nav {}
+
+.header__menu {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+}
+
+.header__item {}
+
+.header__button {
+	display: flex;
+	align-items: start;
+	gap: 8px;
+}
+
+.main {}
+
+.section {
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.promo {
+	background: url('../img/promo.jpeg') center / cover no-repeat;
+	padding: 100px;
+	border-radius: 40px;
+}
+
+.promo__description {
+	width: 530px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.promo__title {
+	font-size: 72px;
+	font-weight: 600;
+	line-height: 76px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #E1D4C9;
+}
+
+.promo__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #E1D4C9;
+}
+
+.accent {
+	font-style: italic;
+	color: #B0907A;
+	font-size: 72px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 76px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.promo__button {
+	width: 200px;
+	height: 64px;
+	padding: 20px, 78px, 20px, 78px;
+	border-radius: 100px;
+	background: #E1D4C9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.promo__button>span {
+	transform: translateX(12px);
+	transition: transform 0.4s ease-in;
+}
+
+.promo__button__img {
+	opacity: 0;
+	transition: opacity 0.4s ease-in;
+}
+
+.promo__button:hover>span {
+	transform: translateX(-2px);
+}
+
+.promo__button:hover>.promo__button__img {
+	opacity: 1;
+}
+
+
+.favorite {}
+
+.favorite__title {
+	text-align: center;
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 75px;
+	letter-spacing: 0em;
+}
+
+.favorite__title>span {
+	font-size: 60px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 75px;
+	letter-spacing: 0em;
+}
+
+.favorite__slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.favorite__slider__prev {
+	rotate: 180deg;
+}
+
+.slider__button {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	border: 1px solid #665F55;
+}
+
+.favorite__slider__card {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider__item {
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.slider__item__img {
+	max-width: 480px;
+	max-height: 480px;
+}
+
+.slider__item__desc {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.slider__item__title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0em;
+}
+
+.slider__item__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+}
+
+.slider__item__price {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0em;
+}
+
+.favorite__slider__next {}
+
+.favorite__slider__status {}
+
+.slider__status__item {}
+
+.active {}
+
+.about {}
+
+.about__title {}
+
+.about__items {}
+
+.about__item_1 {}
+
+.about__item__img {}
+
+.about__item_2 {}
+
+.about__item_3 {}
+
+.about__item_4 {}
+
+.download {}
+
+.download__items {}
+
+.download__desc {}
+
+.download__title {}
+
+.download__text {}
+
+.download__btns {}
+
+.download__btn {}
+
+.download__btn__img {}
+
+.download__btn__desc {}
+
+.footer {}
+
+.footer__promo {}
+
+.footer__title {}
+
+.footer__links {}
+
+.footer__link {}
+
+.link__svg {}
+
+.footer__contacts {}
+
+.contacts__title {}
+
+.contacts__menu {}
+
+.contacts__item {}
