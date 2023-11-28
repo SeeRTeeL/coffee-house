@@ -605,7 +605,7 @@ a:hover::before {
 	transition: all 0.4s ease-in;
 }
 
-.grid__item:hover. grid__item__img>img {
+.grid__item:hover .grid__item__img>img {
 	scale: 0.91;
 }
 
