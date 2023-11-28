@@ -69,7 +69,8 @@ a:hover::before {
 
 .header__button__active {
 	padding-bottom: 2px;
-	border-bottom: 2px solid #403F3D;;
+	border-bottom: 2px solid #403F3D;
+	pointer-events: none;
 }
 
 .section {
