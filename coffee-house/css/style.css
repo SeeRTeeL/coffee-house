@@ -21,7 +21,7 @@ a {
 	position: relative;
 }
 
-a:not(.promo__button, .download__btn)::before {
+a:not(.promo__button, .download__btn, .header_logo, .footer__link)::before {
 	content: "";
 	position: absolute;
 	bottom: -5px;
@@ -51,7 +51,9 @@ a:hover::before {
 	margin-bottom: 20px;
 }
 
-.header__logo {}
+.header__logo {
+	
+}
 
 .header__nav {}
 
@@ -61,7 +63,8 @@ a:hover::before {
 	gap: 40px;
 }
 
-.header__item {}
+.header__item {
+}
 
 .header__button {
 	display: flex;
@@ -188,6 +191,17 @@ a:hover::before {
 	justify-content: center;
 	border-radius: 100px;
 	border: 1px solid #665F55;
+	background: #E1D4C9;
+	transition: background 0.4s ease-in;
+}
+
+
+.slider__button:hover .slider__btn {
+	stroke: #E1D4C9;
+}
+
+.slider__button:hover {
+	background: #665F55;
 }
 
 .favorite__slider__card {
@@ -291,7 +305,7 @@ a:hover::before {
 }
 
 .about__item:hover .about__item__img {
-	scale: 0.9;
+	scale: 0.91;
 }
 
 .about__item__img {
@@ -365,9 +379,21 @@ a:hover::before {
 	border-radius: 100px;
 	padding: 12px 20px;
 	width: 200px;
+	transition: all 0.4s ease-in;
 }
 
-.download__btn__img {}
+.download__btn:hover .download__btn__img {
+	fill: #E1D4C9;
+}
+
+.download__btn:hover {
+	background: #665F55;
+	color:#E1D4C9
+}
+
+.download__btn__img {
+	transition: all 0.4s ease-in;
+}
 
 .download__btn__desc p:nth-child(1) {
 	font-size: 10px;
@@ -427,14 +453,25 @@ a:hover::before {
 .footer__link {
 	width: 60px;
 	height: 60px;
-	border: 1px solid #C1B6AD;
+	border: 1px solid #E1D4C9;
 	border-radius: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.4s ease-in;
 }
 
-.link__svg {}
+.link__svg {
+	transition: all 0.4s ease-in;
+}
+
+.footer__link:hover .link__svg {
+	stroke: #403F3D;
+}
+
+.footer__link:hover {
+	background-color: #E1D4C9;
+}
 
 .footer__contacts {
 	width: 530px;
@@ -458,6 +495,19 @@ a:hover::before {
 	gap: 20px;
 }
 
+.contacts__item {
+	display: flex;
+	gap: 8px;
+}
+
 .contacts__item>a {
 	color: #E1D4C9;
+	display: flex;
+	gap: 8px;
+}
+
+.contacts__item>a:hover::before {
+	width: 100%;
+	border-color: #E1D4C9;
+	opacity: 1;
 }
