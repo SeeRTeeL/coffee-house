@@ -54,25 +54,22 @@ a:hover::before {
 	margin-bottom: 20px;
 }
 
-.header__logo {}
-
-.header__nav {}
-
 .header__menu {
 	list-style: none;
 	display: flex;
 	gap: 40px;
 }
 
-.header__item {}
-
 .header__button {
 	display: flex;
 	align-items: start;
 	gap: 8px;
+	position: relative;
 }
 
-.main {}
+.header__button__active>a {
+	border-bottom: 2px solid #403F3D;
+}
 
 .section {
 	margin-bottom: 100px;
@@ -152,9 +149,6 @@ a:hover::before {
 .promo__button:hover>.promo__button__img {
 	opacity: 1;
 }
-
-
-.favorite {}
 
 .favorite__title {
 	text-align: center;
@@ -549,6 +543,16 @@ a:hover::before {
 	border: 1px solid #C1B6AD;
 	border-radius: 100px;
 	padding: 8px 16px 8px 8px;
+	transition: all 0.4s ease-in;
+}
+
+.types__item:hover:not(.active) {
+	background: #665F55;
+	color: #E1D4C9;
+}
+
+.types__item:hover:not(.active) .item__icon {
+	background: #E1D4C9;
 }
 
 .types__item.active {
@@ -556,7 +560,7 @@ a:hover::before {
 	color: #E1D4C9;
 }
 
-.types__item.active > .item__icon {
+.types__item.active>.item__icon {
 	background: #E1D4C9;
 }
 
@@ -571,11 +575,11 @@ a:hover::before {
 }
 
 .item__text {
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
 }
 
 .grid__types {
@@ -585,14 +589,56 @@ text-align: left;
 	margin-bottom: 100px;
 }
 
-.grid__item {}
+.grid__item {
+	border: 1px solid #C1B6AD;
+	border-radius: 40px;
+}
 
-.grid__item__img {}
+.grid__item__img {
+	width: 310px;
+	height: 310px;
+	border-radius: 40px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-.grid__item__desc {}
+.grid__item__img>img {
+	transition: all 0.4s ease-in;
+}
 
-.item__desc__title {}
+.grid__item__img:hover.grid__item__img>img {
+	scale: 0.91;
+}
 
-.item__desc__text {}
+.grid__item__desc {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px;
+}
 
-.item__desc__price {}
+.item__desc__title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.item__desc__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.item__desc__price {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+}
