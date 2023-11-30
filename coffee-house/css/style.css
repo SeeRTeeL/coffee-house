@@ -60,6 +60,12 @@ a:hover::before {
 	gap: 40px;
 }
 
+.header__item {
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+}
+
 .header__button {
 	display: flex;
 	align-items: start;
@@ -218,6 +224,7 @@ a:hover::before {
 .slider__item__img {
 	max-width: 480px;
 	max-height: 480px;
+	margin-bottom: 20px;
 }
 
 .slider__item__desc {
@@ -324,6 +331,7 @@ a:hover::before {
 .download__items {
 	display: flex;
 	align-items: center;
+	gap: 100px;
 }
 
 .download__desc {
@@ -587,6 +595,8 @@ a:hover::before {
 }
 
 .grid__item {
+	display: flex;
+	flex-direction: column;
 	border: 1px solid #C1B6AD;
 	border-radius: 40px;
 }
@@ -611,9 +621,10 @@ a:hover::before {
 
 .grid__item__desc {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
-	gap: 12px;
 	padding: 20px;
+	gap: 12px;
 }
 
 .item__desc__title {
@@ -638,4 +649,5 @@ a:hover::before {
 	line-height: 30px;
 	letter-spacing: 0em;
 	text-align: left;
+	margin-top: auto;
 }
