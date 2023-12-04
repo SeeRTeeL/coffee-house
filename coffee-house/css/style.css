@@ -227,6 +227,7 @@ a:hover::before {
 }
 
 .slider__item__img {
+	padding: 1px;
 	max-width: 480px;
 	margin-bottom: 20px;
 	display: flex;
