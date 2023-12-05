@@ -51,6 +51,10 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 	margin-bottom: 20px;
 }
 
+.header_logo {
+	height: 60px;
+}
+
 .header__menu {
 	list-style: none;
 	display: flex;
@@ -491,6 +495,7 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 	flex-direction: column;
 	align-items: center;
 	gap: 40px;
+	margin-bottom: 50px;
 }
 
 .menu__title {
@@ -740,6 +745,10 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 
 	.grid__ref__btn {
 		transition: 0.4s ease-in;
+	}
+
+	.menu {
+		margin-bottom: 100px;
 	}
 
 	.footer {
