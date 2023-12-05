@@ -48,7 +48,7 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 
 .header__menu {
@@ -491,7 +491,7 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 }
 
 .menu__title {
-	width: 800px;
+	max-width: 800px;
 	font-size: 60px;
 	font-weight: 600;
 	line-height: 75px;
@@ -555,7 +555,6 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px;
-	margin-bottom: 100px;
 }
 
 .grid__item {
@@ -581,10 +580,20 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 
 .grid__item__desc {
 	display: flex;
-	flex: 1;
+	flex: 1 1 auto;
 	flex-direction: column;
 	padding: 20px;
 	gap: 12px;
+}
+
+.grid__ref {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ref__button {
+	display: none;
 }
 
 .item__desc__title {
@@ -700,6 +709,32 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 		max-width: 688px;
 	}
 
+	.grid__types {
+		display: grid;
+		grid-template-columns: repeat(2, 310px);
+		grid-template-rows: repeat(2, 506px);
+		gap: 40px;
+	}
+
+	.grid__item:nth-child(n+5) {
+		display: none;
+	}
+
+	.ref__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		border: 1px solid #665F55;
+		border-radius: 100px;
+		transition: all 0.4s ease-in;
+	}
+
+	.grid__ref__btn {
+		transition: 0.4s ease-in;
+	}
+
 	.footer {
 		flex-direction: column;
 		align-items: flex-start;
@@ -802,6 +837,34 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 		flex-direction: column;
 	}
 
+	.menu__title {
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 40px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+
+	.menu__title .accent {
+		font-size: 32px;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 40px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+
+	.menu__types {
+		gap: 8px;
+	}
+
+	.grid__types {
+		display: grid;
+		grid-template-columns: repeat(1, 310px);
+		grid-template-rows: repeat(4, 506px);
+		gap: 40px;
+	}
+
 	.footer {
 		padding: 60px 16px;
 		gap: 40px;
@@ -902,6 +965,14 @@ a:not(.promo__button, .download__btn, .header_logo, .footer__link, .header__butt
 	}
 
 	.slider__button:hover {
+		background: #665F55;
+	}
+
+	.ref__button:hover .grid__ref__btn {
+		stroke: #E1D4C9;
+	}
+
+	.ref__button:hover {
 		background: #665F55;
 	}
 
