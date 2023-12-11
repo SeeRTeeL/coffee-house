@@ -15,18 +15,18 @@
 <body>
 	<div class="container">
 		<header class="header">
-			<img src="./img/logo.svg" alt="logo">
+			<img class="header_logo" src="./img/logo.svg" alt="logo">
 			<div class="header__burger">
 			</div>
 			<nav class="header__nav">
 				<ul class="header__menu">
-					<li class="header__item"><a href="#favorite">Favorite coffee</a></li>
-					<li class="header__item"><a href="#about">About</a></li>
-					<li class="header__item"><a href="#download">Mobile app</a></li>
-					<li class="header__item"><a href="#contacts">Contact us</a></li>
+					<li><a data-goto=".favorite" class="header__item" href="#">Favorite coffee</a></li>
+					<li><a data-goto=".about" class="header__item" href="#">About</a></li>
+					<li><a data-goto=".download" class="header__item" href="#">Mobile app</a></li>
+					<li><a data-goto=".contacts" class="header__item" href="#">Contact us</a></li>
 				</ul>
 			</nav>
-			<a class="header__button" href="/seerteel-JSFE2023Q4/coffee-house/menu.html">
+			<a class="header__button _hide" href="/seerteel-JSFE2023Q4/coffee-house/menu.html">
 				<span>Menu</span>
 				<img src="./img/coffee-cup.svg" alt="coffee-cup">
 			</a>
@@ -189,7 +189,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="footer__contacts" id="contacts">
+			<div class="footer__contacts contacts" id="contacts">
 				<h3 class="contacts__title">Contact us</h3>
 				<ul class="contacts__menu">
 					<li class="contacts__item">
@@ -212,6 +212,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
